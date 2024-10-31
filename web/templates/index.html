@@ -1,0 +1,29 @@
+<!-- This is a HTML document -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Message Server</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+      /** This is CSS, it is used for styling the page **/
+      body {
+        background-color: blanchedalmond;
+        color: darkblue;
+        font-size: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <p>You have some messages:</p>
+    <ul>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+
+    <form action="/" method="POST">
+        <input type="text" name="message">
+        <input type="submit" value="Send">
+    </form>
+  </body>
+</html>

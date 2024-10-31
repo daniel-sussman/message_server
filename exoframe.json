@@ -1,0 +1,5 @@
+{
+  "name": "message_server",
+  "domain": "danielsussman-messages.xf.mkrs.link",
+  "port": "5000"
+}
